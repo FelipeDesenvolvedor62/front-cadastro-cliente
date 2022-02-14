@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -10,8 +12,8 @@ import { CadClienteComponent } from './components/body/cliente/cad-cliente/cad-c
 
 @NgModule({
   declarations: [AppComponent, SidebarComponent, CadClienteComponent],
-  imports: [BrowserModule, AppRoutingModule, ButtonModule, MegaMenuModule],
+  imports: [BrowserModule, AppRoutingModule, ButtonModule, MegaMenuModule, FormsModule, ReactiveFormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })
-export class AppModule {}
+export class AppModule { }

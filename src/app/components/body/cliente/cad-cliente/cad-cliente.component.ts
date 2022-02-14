@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Cliente } from '../model/Cliente';
 
 @Component({
   selector: 'app-cad-cliente',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./cad-cliente.component.sass']
 })
 export class CadClienteComponent implements OnInit {
+
+  model = new Cliente
 
   constructor() { }
 
